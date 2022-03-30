@@ -1,9 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+class Square extends React.Component {
+  render(){
+    return(
+      <button className = "square">
+        {this.props.value}
+      </button>
+    );
+  }
+}
+
 
 reportWebVitals();
